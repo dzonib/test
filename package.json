@@ -1,0 +1,17 @@
+{
+  "name": "funstuff",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "homepage":"https://dzonib.github.io/test",
+  "scripts":{
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gh-pages": "^2.1.1"
+  }
+}

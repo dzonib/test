@@ -1,0 +1,15 @@
+button {
+    background: rgb(157, 200, 147);
+    outline: none;
+    color: white;
+    width: 100px;
+    height: 30px;
+    border: none;
+    font-weight: bold;
+}
+
+button#emcee
+{
+    position: relative;
+    z-index: 2;   
+}

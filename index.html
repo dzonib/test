@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Ćao Milka. Hoćeš li na vožnju bicikla samnom (40km)</h1>
+    <button id="yea">Da</button>
+    <div id="runaway-container">
+      <button id="emcee">Ne</button>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      var caller = $("#emcee"),
+        box = $("#box");
+
+      function foo() {
+        mLeft = Math.random() * 200;
+        mTop = Math.random() * 200;
+
+        $("#runaway-container").css("margin-left", mLeft);
+        $("#runaway-container").css("margin-top", mTop);
+      }
+
+      $(document).ready(function() {
+        caller.on("mouseenter", foo);
+      });
+
+    </script>
+  </body>
+</html>
